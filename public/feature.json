@@ -1,0 +1,42 @@
+[
+    {
+        "title": "User-Friendly Registration",
+        "description": "Effortless and quick registration process for users.",
+        "icon": "FaUserPlus"
+    },
+    {
+        "title": "Assignment Submission",
+        "description": "Submit assignments online with ease, supporting various file types.",
+        "icon": "FaFileUpload"
+    },
+    {
+        "title": "Assignment Management",
+        "description": "Track and manage assignments through a user-friendly dashboard.",
+        "icon": "FaTasks"
+    },
+    {
+        "title": "Feedback and Grading",
+        "description": "Receive constructive feedback from instructors with automated grading.",
+        "icon": "FaComment"
+    },
+    {
+        "title": "Resource Center",
+        "description": "Access a rich repository of study materials and resources.",
+        "icon": "FaBook"
+    },
+    {
+        "title": "Discussion Forum",
+        "description": "Engage in discussions with peers on assignment-related topics.",
+        "icon": "FaComments"
+    },
+    {
+        "title": "Announcements",
+        "description": "Stay informed with important announcements from instructors.",
+        "icon": "FaBullhorn"
+    },
+    {
+        "title": "Progress Tracking",
+        "description": "Visualize your progress with informative charts and graphs.",
+        "icon": "FaChartLine"
+    }
+]

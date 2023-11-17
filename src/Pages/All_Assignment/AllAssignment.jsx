@@ -7,7 +7,7 @@ import { AuthContext } from "../../Provider/AuthProvider";
 const AllAssignment = () => {
     const { user } = useContext(AuthContext)
     const [allData, setAllData] = useState([])
-    const [displayData, setDisplayData] = useState([]); 
+    const [displayData, setDisplayData] = useState([]);
 
     useEffect(() => {
         fetch('http://localhost:5000/data')
@@ -19,7 +19,7 @@ const AllAssignment = () => {
     }, [])
 
 
-    
+
 
 
 
@@ -49,24 +49,24 @@ const AllAssignment = () => {
     }
 
     const handleDataFilter = filter => {
-        if(filter === 'All'){
+        if (filter === 'All') {
             setDisplayData(allData)
         }
 
-        else if (filter === 'Easy'){
+        else if (filter === 'Easy') {
             const easyAssignment = allData.filter(data => data.level === 'Easy')
             setDisplayData(easyAssignment)
-            
+
         }
-        else if (filter === 'Medium'){
+        else if (filter === 'Medium') {
             const mediumAssignment = allData.filter(data => data.level === 'Medium')
             setDisplayData(mediumAssignment)
-            
+
         }
-        else if (filter === 'Hard'){
+        else if (filter === 'Hard') {
             const hardAssignment = allData.filter(data => data.level === 'Hard')
             setDisplayData(hardAssignment)
-            
+
         }
     }
 
@@ -81,11 +81,13 @@ const AllAssignment = () => {
                 </button>
                 <button onClick={() => handleDataFilter('Hard')} className="text-center py-3 px-5 border hover:bg-gray-200">Hard</button>
             </div>
-            <div className="my-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                {
-                    displayData.map((data, idx) => <AssignmentData key={idx}
-                        handleDelete={handleDelete} data={data}></AssignmentData>)
-                }
+            <div className="flex justify-center items-center">
+                <div className="my-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                    {
+                        displayData.map((data, idx) => <AssignmentData key={idx}
+                            handleDelete={handleDelete} data={data}></AssignmentData>)
+                    }
+                </div>
             </div>
         </div>
     );

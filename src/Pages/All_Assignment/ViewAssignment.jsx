@@ -18,15 +18,31 @@ const ViewAssignment = () => {
             .catch(error => console.error(error));
     }, [id]);
 
+    const { title, image, mark, level, date, _id, description } = cardDetails;
 
     if (loading) {
         return <div>Loading...</div>;
     }
-    
+
     return (
         <div>
-            <h2>{cardDetails.level}</h2>
-            <Link to={`/allassignment/data/${cardDetails._id}`}><button className="btn btn-secondary">Take Assignment</button></Link>
+            <div className="mt-6">
+                <div className="flex items-center gap-40">
+                    <div>
+                        <img className="rounded-lg w-[600px] h-96" src={image} alt="" />
+                    </div>
+                    <div className="space-y-1">
+                        <h2 className="text-3xl font-semibold">Marks : {mark}</h2>
+                        <h2 className="text-3xl font-semibold">Due Date : {date}</h2>
+                        <h2 className="text-3xl font-semibold">Level : {level}</h2>
+                        <Link to={`/allassignment/data/${_id}`}><button className="px-3 py-3 bg-purple-600 rounded-md text-white font-medium mt-4">Take Assignment</button></Link>
+                    </div>
+                </div>
+                <div className="mt-6 space-y-4">
+                    <h2 className="text-3xl font-semibold text-black">{title}</h2>
+                    <p>{description}</p>
+                </div>
+            </div>
         </div>
     );
 };

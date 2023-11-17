@@ -15,7 +15,7 @@ const My_Assignment = () => {
             })
     }, [user.email])
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             {
                 allData.map(data => <SubmitedData key={data._id} data={data}></SubmitedData>)
             }
