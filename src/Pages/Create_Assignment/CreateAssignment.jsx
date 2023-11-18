@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
+import { toast } from 'react-toastify';
 
 
 
@@ -31,7 +32,7 @@ const CreateAssignment = () => {
             .then(data => {
                 console.log(data);
                 if (data.insertedId) {
-                    alert('User added successfully');
+                    toast.success('Assignment Create successful');
                     form.reset();
                 }
             })
