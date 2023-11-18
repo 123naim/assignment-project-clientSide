@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
-import { useParams } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
+import { toast } from 'react-toastify';
 
 
 const TakeAssignment = () => {
@@ -8,6 +9,8 @@ const TakeAssignment = () => {
     const [cardDetails, setCardDetails] = useState({});
     const [loading, setLoading] = useState(true);
     const { id } = useParams()
+    const location = useLocation();
+    const navigate = useNavigate();
 
     useEffect(() => {
         fetch(`http://localhost:5000/data/${id}`)
@@ -44,8 +47,9 @@ const TakeAssignment = () => {
             .then(data => {
                 console.log(data);
                 if (data.insertedId) {
-                    alert('User added successfully');
+                    toast.success('Assignment Create successful');
                     form.reset();
+                    navigate(location?.state ? location.state : '/submitedAssignment')
                 }
             })
     }
