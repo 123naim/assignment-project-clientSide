@@ -15,11 +15,14 @@ const My_Assignment = () => {
             })
     }, [user.email])
     return (
-        <div className="flex justify-center items-center">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                {
-                    allData.map(data => <SubmitedData key={data._id} data={data}></SubmitedData>)
-                }
+        <div>
+            <h2 className="text-3xl font-bold text-center mb-8 text-black">My Submited Assignment</h2>
+            <div className="flex justify-center items-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                    {
+                        allData.map(data => <SubmitedData key={data._id} data={data}></SubmitedData>)
+                    }
+                </div>
             </div>
         </div>
     );
