@@ -27,11 +27,11 @@ const ViewAssignment = () => {
     return (
         <div>
             <div className="mt-6">
-                <div className="flex items-center gap-40">
+                <div className="flex flex-col lg:flex-row items-center gap-5 lg:gap-40 ">
                     <div>
-                        <img className="rounded-lg w-[600px] h-96" src={image} alt="" />
+                        <img className="rounded-lg md:w-[600px] h-96" src={image} alt="" />
                     </div>
-                    <div className="space-y-1">
+                    <div className="space-y-1 -ml-24">
                         <h2 className="text-3xl font-semibold">Marks : {mark}</h2>
                         <h2 className="text-3xl font-semibold">Due Date : {date}</h2>
                         <h2 className="text-3xl font-semibold">Level : {level}</h2>

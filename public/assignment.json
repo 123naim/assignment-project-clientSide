@@ -3,48 +3,63 @@
     "title": "Introduction to Programming",
     "description": "Write a simple program that calculates the factorial of a number using any programming language of your choice.",
     "mark": 100,
-    "image": "https://i.ibb.co/FhF62gX/introduction.jpg",
-    "level": "Easy",
-    "date": "2023-11-30"
-  },
-  {
-    "title": "Introduction to Programming",
-    "description": "Write a simple program that calculates the factorial of a number using any programming language of your choice.",
-    "mark": 100,
-    "image": "https://i.ibb.co/FhF62gX/introduction.jpg",
-    "level": "Easy",
-    "date": "2023-11-30"
-  },
-  {
-    "title": "Introduction to Programming",
-    "description": "Write a simple program that calculates the factorial of a number using any programming language of your choice.",
-    "mark": 100,
-    "image": "https://i.ibb.co/FhF62gX/introduction.jpg",
+    "image": "https://i.ibb.co/M56H3M7/introduction.jpg",
     "level": "Medium",
+    "email": "mdnayemiqbal69@gmail.com",
     "date": "2023-11-30"
   },
   {
-    "title": "Introduction to Programming",
-    "description": "Write a simple program that calculates the factorial of a number using any programming language of your choice.",
+    "title": "Web Development Basics",
+    "description": "Create a basic web page using HTML and CSS. Include a navigation bar and a responsive layout.",
     "mark": 100,
-    "image": "https://i.ibb.co/FhF62gX/introduction.jpg",
+    "image": "https://i.ibb.co/z2BqYQ8/basci.webp",
+    "level": "Easy",
+    "email": "mdnayemiqbal69@gmail.com",
+    "date": "2023-12-15"
+  },
+  {
+    "title": "Data Analysis with Python",
+    "description": "Use Python to analyze a given dataset. Provide insights and visualizations.",
+    "mark": 100,
+    "image": "https://i.ibb.co/mb1NfrT/dataapython.png",
+    "level": "Hard",
+    "email": "mdnayemiqbal69@gmail.com",
+    "date": "2024-01-10"
+  },
+  {
+    "title": "Introduction to Machine Learning",
+    "description": "Explore a basic machine learning algorithm and apply it to a sample dataset.",
+    "mark": 100,
+    "image": "https://i.ibb.co/BNcK0V1/machine-learning.png",
     "level": "Medium",
-    "date": "2023-11-30"
+    "email": "mdnayemiqbal886@gmail.com",
+    "date": "2024-02-01"
   },
   {
-    "title": "Introduction to Programming",
-    "description": "Write a simple program that calculates the factorial of a number using any programming language of your choice.",
+    "title": "Mobile App Development",
+    "description": "Develop a simple mobile app using a framework of your choice. Include basic features and a user-friendly interface.",
     "mark": 100,
-    "image": "https://i.ibb.co/FhF62gX/introduction.jpg",
-    "level": "Hard",
-    "date": "2023-11-30"
+    "image": "https://i.ibb.co/ZBbjMLH/mobile-app.png",
+    "level": "Medium",
+    "email": "mdnayemiqbal886@gmail.com",
+    "date": "2024-02-28"
   },
   {
-    "title": "Introduction to Programming",
-    "description": "Write a simple program that calculates the factorial of a number using any programming language of your choice.",
-    "mark": 100,
-    "image": "https://i.ibb.co/FhF62gX/introduction.jpg",
+    "title": "Creative Writing Challenge",
+    "description": "Compose a short story or poem showcasing your creativity and writing skills.",
+    "mark": 90,
+    "image": "https://i.ibb.co/wRwcrLk/write.webp",
+    "level": "Easy",
+    "email": "mdnayemiqbal886@gmail.com",
+    "date": "2024-03-15"
+  },
+  {
+    "title": "Network Security Project",
+    "description": "Design and implement a network security solution for a simulated network environment.",
+    "mark": 120,
+    "image": "https://i.ibb.co/ySNjdK9/network-security.jpg",
     "level": "Hard",
-    "date": "2023-11-30"
+    "email": "mdnayemiqbal69@gmail.com",
+    "date": "2024-04-05"
   }
 ]

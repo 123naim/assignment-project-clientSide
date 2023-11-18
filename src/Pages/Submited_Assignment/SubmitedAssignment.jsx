@@ -13,10 +13,12 @@ const SubmitedAssignment = () => {
             })
     }, [])
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:grid-cols-3">
-            {
-                allData.map(data => <SubmitedData key={data._id} data={data}></SubmitedData>)
-            }
+        <div className="flex justify-center items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:grid-cols-3">
+                {
+                    allData.map(data => <SubmitedData key={data._id} data={data}></SubmitedData>)
+                }
+            </div>
         </div>
     );
 };
