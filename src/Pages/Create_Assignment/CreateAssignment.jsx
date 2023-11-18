@@ -1,11 +1,14 @@
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { toast } from 'react-toastify';
+import { useLocation, useNavigate } from "react-router-dom";
 
 
 
 const CreateAssignment = () => {
     const {user} = useContext(AuthContext)
+    const location = useLocation();
+    const navigate = useNavigate();
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -34,6 +37,7 @@ const CreateAssignment = () => {
                 if (data.insertedId) {
                     toast.success('Assignment Create successful');
                     form.reset();
+                    navigate(location?.state ? location.state : '/allassignment')
                 }
             })
     }

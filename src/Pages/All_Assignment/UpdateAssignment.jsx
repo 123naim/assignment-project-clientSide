@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { toast } from 'react-toastify';
 
@@ -7,6 +7,8 @@ const UpdateAssignment = () => {
     const [cardDetails, setCardDetails] = useState({});
     const [loading, setLoading] = useState(true);
     const { id } = useParams()
+    const location = useLocation();
+    const navigate = useNavigate();
     useEffect(() => {
         fetch(`http://localhost:5000/data/${id}`)
             .then(res => res.json())
@@ -48,6 +50,7 @@ const UpdateAssignment = () => {
                     console.log(data);
                     if (data.modifiedCount > 0) {
                         toast.success('user Updated Successfully')
+                        navigate(location?.state ? location.state : '/allassignment')
                     }
                 })
         }
