@@ -8,7 +8,7 @@ const ViewAssignment = () => {
     const [loading, setLoading] = useState(true);
     const { id } = useParams()
     useEffect(() => {
-        fetch(`http://localhost:5000/data/${id}`)
+        fetch(`https://assignment-server-side-tau.vercel.app/data/${id}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data)

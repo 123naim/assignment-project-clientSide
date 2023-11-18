@@ -7,7 +7,7 @@ const My_Assignment = () => {
     const { user } = useContext(AuthContext)
     const [allData, setAllData] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/submite')
+        fetch('https://assignment-server-side-tau.vercel.app/submite')
             .then(res => res.json())
             .then(data => {
                 const userData = data.filter(dd => dd.email === user.email)

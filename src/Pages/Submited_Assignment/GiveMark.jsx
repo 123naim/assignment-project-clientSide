@@ -7,7 +7,7 @@ const GiveMark = () => {
     const [loading, setLoading] = useState(true);
     const { id } = useParams()
     useEffect(() => {
-        fetch(`http://localhost:5000/submite/${id}`)
+        fetch(`https://assignment-server-side-tau.vercel.app/submite/${id}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data)
@@ -24,7 +24,7 @@ const GiveMark = () => {
         const text = form.text.value;
         const formInfo = { marks, text, assignmentStatus: 'Completed' };
 
-        fetch(`http://localhost:5000/submite/${cardDetails._id}`, {
+        fetch(`https://assignment-server-side-tau.vercel.app/submite/${cardDetails._id}`, {
             method: "PUT",
             headers: {
                 "content-Type": "application/json",

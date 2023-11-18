@@ -10,7 +10,7 @@ const UpdateAssignment = () => {
     const location = useLocation();
     const navigate = useNavigate();
     useEffect(() => {
-        fetch(`http://localhost:5000/data/${id}`)
+        fetch(`https://assignment-server-side-tau.vercel.app/data/${id}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data)
@@ -38,7 +38,7 @@ const UpdateAssignment = () => {
 
 
         if (user.email === cardDetails.email) {
-            fetch(`http://localhost:5000/data/${cardDetails._id}`, {
+            fetch(`https://assignment-server-side-tau.vercel.app/data/${cardDetails._id}`, {
                 method: "PUT",
                 headers: {
                     "content-Type": "application/json",

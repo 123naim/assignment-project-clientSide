@@ -10,7 +10,7 @@ const AllAssignment = () => {
     const [displayData, setDisplayData] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/data')
+        fetch('https://assignment-server-side-tau.vercel.app/data')
             .then(res => res.json())
             .then(data => {
                 setAllData(data)
@@ -21,16 +21,13 @@ const AllAssignment = () => {
 
 
 
-
-
-
     const handleDelete = (_id, email) => {
         console.log(user?.email)
         console.log(email)
 
 
         if (user.email == email) {
-            fetch(`http://localhost:5000/data/${_id}`, {
+            fetch(`https://assignment-server-side-tau.vercel.app/data/${_id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

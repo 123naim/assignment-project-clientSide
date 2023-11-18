@@ -13,7 +13,7 @@ const TakeAssignment = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/data/${id}`)
+        fetch(`https://assignment-server-side-tau.vercel.app/data/${id}`)
             .then(res => res.json())
             .then(data => {
                 setCardDetails(data)
@@ -36,7 +36,7 @@ const TakeAssignment = () => {
         console.log(formInfo)
 
 
-        fetch('http://localhost:5000/submite', {
+        fetch('https://assignment-server-side-tau.vercel.app/submite', {
             method: "POST",
             headers: {
                 "content-Type": "application/json",

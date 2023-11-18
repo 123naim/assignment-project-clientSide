@@ -24,7 +24,7 @@ const CreateAssignment = () => {
         console.log(formInfo)
 
 
-        fetch('http://localhost:5000/post', {
+        fetch('https://assignment-server-side-tau.vercel.app/post', {
             method: "POST",
             headers: {
                 "content-Type": "application/json",

@@ -5,7 +5,7 @@ import SubmitedData from "./SubmitedData";
 const SubmitedAssignment = () => {
     const [allData, setAllData] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/submite')
+        fetch('https://assignment-server-side-tau.vercel.app/submite')
             .then(res => res.json())
             .then(data => {
                 const pending = data.filter(da => da.assignmentStatus === "Pending")
